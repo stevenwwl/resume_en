@@ -1,52 +1,73 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Weilun Wang}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{wangwl@tju.edu.cn} \textperiodcentered\ 
+  \phone{138-321-558-60} \textperiodcentered\
+  \github[github.com/stevenwwl]{https://stevenwwl.github.io/}}
+\basicInfo{
+\address{Room 223, the 39th Building, Weijinlu Campus of Tianjin University, Tianjin}}
+
+\section{\faStar\ Position Objective}
+\href{https://jobs.bytedance.com/campus/position/7129706572939659533/detail?_tracking=rCGKEmW&utm_source=jobs}{\faLink\ Researcher in Reinforcement Learning}
+
+
+\section{\faUser\ Personal Information}
+\textbf{Gender}: Male \textperiodcentered\ \textbf{Age}: 23 \textperiodcentered\ \textbf{Policital Status}: Party member of CPC
+
+
+
+
+
+
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{Tianjin University}, Tianjin, China}{2022 -- Present}
+\textit{Master student} in \textbf{Control Theory and Control Engineering}, expected january 2025
+\datedsubsection{\textbf{Tianjin University}, Tianjin, China}{2018 -- 2022}
+\textit{B.E.} in \textbf{Automation}
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\datedsubsection{\textbf{Detection and Exploration of UAV Based on Reinforcement Learning}}{2022 -- Present}
+\role{Participant}{}
+
+
+\quad We are trying to design an UAV system that can detect and explore the environment using reinforcement learning. We built a simulation environment using Unity3D and use the SAC algorithm to train the UAV. We also design a new reward function to make the UAV explore the environment more efficiently. The result is 80\% success rate in the simulation environment.
+
+
+Contribution:
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Built a simulation environment of UAV based on \textbf{Unity3D}
+  \item Implemented a multi-agent reinforcement learning algorithm based on \textbf{MASAC}
+  \item Designed \textbf{a new reward function} to make the UAV explore the environment more efficiently
+  \item Trained the UAV in the simulation environment and chose the \textbf{best hyperparameters}
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
+% \datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
+% \role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
+% Brief introduction: xxx
+% \begin{itemize}
+%   \item Implemented xxx feature
+%   \item Optimized xxx 5\%
+%   \item xxx
+% \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
-\end{itemize}
+% \datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
+% \role{\LaTeX, Maintainer}{Individual Projects}
+% An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+% \begin{itemize}
+%   \item Easy to be further customized or extended
+%   \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+%   \item FontAwesome 4.5.0 support
+% \end{itemize}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -55,23 +76,30 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 %  \item main contribution
 %\end{itemize}
 
+\section{\faBook\ Publication}
+Intelligent design software for electric vehicle drive motor (\textit{software copyright registered}: 2021SR0743528)
+
+
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item Programming Languages: \textbf{Python, C Sharp, Java}
+  \item Deeplearning Frameworks: \textbf{PyTorch, TensorFlow}
+  \item Other skills: \textbf{Unity Game Engine, SQL Server, Git, WPF Framework}
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+\section{\faTrophy\ Honors and Awards}
+\begin{itemize}
+  \item \datedline{Scholarship for Outstanding Students of Tianjin University}{2020 -- 2021}
+  \item \datedline{Scholarship for Outstanding Student Cadres of Tianjin University}{2019 -- 2020}
+  \item \datedline{Scholarship for Outstanding Students of Tianjin University}{2018 -- 2019}
+  \item \datedline{Third Prize of MCM/ICM Contest}{2020}
 \end{itemize}
+% \section{\faInfo\ Miscellaneous}
+% \begin{itemize}[parsep=0.5ex]
+%   \item Blog: http://your.blog.me
+%   \item GitHub: https://github.com/username
+%   \item Languages: English - Fluent, Mandarin - Native speaker
+% \end{itemize}
 
 %% Reference
 %\newpage

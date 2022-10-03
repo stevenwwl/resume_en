@@ -16,9 +16,11 @@
 % use fontawesome
 \RequirePackage{fontawesome}
 % use xcolor for customizing color
-%\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
+\usepackage{indentfirst}
+% \setlength{\parindent}{2em}
 % Main document font
 \setmainfont[
   Path = fonts/Main/ ,
@@ -52,7 +54,8 @@
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+  % [\titlerule]                 % Inserts a horizontal line after the heading
+  [{\color{NavyBlue}\titlerule[0.8pt]}]
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 
 \titleformat{\subsection}
@@ -88,6 +91,7 @@
 % defines one's phone
 % usage: \phone{<phone>}
 \newcommand{\phone}[1]{\faPhone\ {#1}}
+\newcommand{\address}[1]{\faHome\ {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
 \newcommand{\linkedin}[2][]{\faLinkedin\ 
